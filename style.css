@@ -6,21 +6,47 @@
 
 body {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: gray;
 }
 
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  background-color: #e74c3c;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin: 20px 0 20px 0;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background-color: #c0392b;
+  transform: scale(1.05);
+}
+
+button:active {
+  transform: scale(0.95);
+}
+
+
 .container {
-    width: 800px;
-    height: 800px;
+    width: 960px;
+    height: 960px;
     display: flex;
     flex-wrap: wrap;
 }
 
 .square {
-    border: 2px solid black;
-    width: 50px;
-    height: 50px;
+    border: 1px solid black;
+    width: 60px;
+    height: 60px;
+    background-color: whitesmoke;
 }
 .hover-state {
     background-color: greenyellow;
