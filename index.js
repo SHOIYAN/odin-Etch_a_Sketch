@@ -10,8 +10,8 @@ for (let i = 0; i < 256; i++){
     container.appendChild(square);
 }
 // hover squares
-const square = document.querySelectorAll('.square');
-square.forEach((square)=>{
+const squares = document.querySelectorAll('.square');
+squares.forEach((square)=>{
     square.addEventListener("mouseover", () => {
         square.classList.add('hover-state');
     });
